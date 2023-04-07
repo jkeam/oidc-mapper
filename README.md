@@ -18,7 +18,10 @@ OIDC Mapper to map custom attributes to custom claims in the JWT.
 5. Use [jwt.io](https://jwt.io/) to decode the `access_token` in your response from step 4
 
 ## Deploy
-1. `build.sh`
+1. Build the app
+
+        build.sh
+
 2. Deploy your app to the running keycloak container, replacing `CONTAINER_ID` below with yours
 
         podman cp target/keycloak-customProtocolMapper-1.0-SNAPSHOT.jar CONTAINER_ID:/opt/jboss/keycloak/standalone/deployments/keycloak-customProtocolMapper-1.0-SNAPSHOT.jar
